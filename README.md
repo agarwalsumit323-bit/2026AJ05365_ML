@@ -1,4 +1,4 @@
-# Telco Customer Churn Prediction: ML Assignment 2
+# 2026AJ05365: Sumit Agarwal: ML Assignment 2
 
 ## a. Problem statement
 
@@ -28,9 +28,9 @@ Five classifiers (Logistic Regression, Decision Tree, K-Nearest Neighbors, Gauss
 
 ## c. GitHub repository link
 
-<https://github.com/YOUR-USERNAME/YOUR-REPO>  ← replace with your repository URL
+https://github.com/agarwalsumit323-bit/2026AJ05365_ML
 
-Live Streamlit app: <https://YOUR-APP.streamlit.app>  ← replace after deployment
+Live Streamlit app: https://2026aj05356-mlassignment2.streamlit.app/
 
 **Repository structure**
 
@@ -86,13 +86,3 @@ All metrics are computed on the held-out test set (1,409 rows). Precision, Recal
 5. **Compare all models** tab: a side-by-side metric table with the best value in each column highlighted, plus a bar chart.
 
 The app validates that the upload has all 19 feature columns plus `Churn`. It only loads the saved models from `model/` and never retrains on uploaded data.
-
-## How to run
-
-```bash
-pip install -r requirements.txt
-python train_models.py      # optional: retrains and regenerates model/ and test_data.csv
-streamlit run app.py
-```
-
-> The saved `.joblib` models must be loaded with the same scikit-learn version they were trained with. If you retrain in a different environment, update the `scikit-learn==` pin in `requirements.txt` to match `python -c "import sklearn; print(sklearn.__version__)"`.
